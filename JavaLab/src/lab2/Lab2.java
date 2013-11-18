@@ -32,17 +32,15 @@ public class Lab2
 			String choice = "";
 			do
 			{
-				System.out
-						.println("Second Week: Select exercise to run (1 - 15) or X to exit");
+				System.out.println("Second Week: Select exercise to run (1 - 15) or X to exit");
 				choice = scanIn.nextLine();
-				if (choice.equalsIgnoreCase("x"))
-					break;
-				else if (exercises.containsKey(choice))
+
+				if (exercises.containsKey(choice))
 					exercises.get(choice).doExercise();
-				else
-					System.out
-							.println("No such exercise! Please, select number from 1 to 15!");
-			} while (choice != "X");
+				else if (!choice.equalsIgnoreCase("x"))
+					System.out.println("No such exercise! Please, select number from 1 to 15!");
+				
+			} while (!choice.equalsIgnoreCase("x"));
 		} catch (Exception ex)
 		{
 			System.out.println("Error: " + ex.getMessage());

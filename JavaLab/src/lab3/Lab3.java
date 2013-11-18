@@ -45,13 +45,13 @@ public class Lab3
 			{
 				System.out.println("Third Week: Select exercise to run (1 - 9) or X to exit");
 				choice = scanIn.nextLine();
-				if (choice.equalsIgnoreCase("x"))
-					break;
-				else if (exercises.containsKey(choice))
+				
+				if (exercises.containsKey(choice))
 					exercises.get(choice).doExercise();
-				else
+				else if (!choice.equalsIgnoreCase("x"))
 					System.out.println("No such exercise! Please, select number from 1 to 9!");
-			} while (choice != "X");
+				
+			} while (!choice.equalsIgnoreCase("x"));
 		} catch (Exception ex)
 		{
 			System.out.println("Error: " + ex.getMessage());
