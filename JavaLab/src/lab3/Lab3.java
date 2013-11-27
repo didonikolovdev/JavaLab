@@ -1,22 +1,6 @@
 package lab3;
 
 import java.util.*;
-
-import lab2.ExerciseB01;
-import lab2.ExerciseB10;
-import lab2.ExerciseB11;
-import lab2.ExerciseB12;
-import lab2.ExerciseB13;
-import lab2.ExerciseB14;
-import lab2.ExerciseB15;
-import lab2.ExerciseB02;
-import lab2.ExerciseB03;
-import lab2.ExerciseB04;
-import lab2.ExerciseB05;
-import lab2.ExerciseB06;
-import lab2.ExerciseB07;
-import lab2.ExerciseB08;
-import lab2.ExerciseB09;
 import commonLab.ExerciseBase;
 
 public class Lab3
